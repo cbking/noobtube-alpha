@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  div.navbar.navbar-default(role="navigation")
+    div.container-fluid
+      div.navbar-header
+        a.navbar-brand(href="/") NoobTube
+        ul.nav.navbar-nav
+          li.active
+            a(href='#') Games
+          li.active
+            a(href='#') How To Play
+          li.active
+            a(href='#') Contact Us
+       div.navbar-right(id="signupin")
+        a(href='#/login')      
+         button.btn.btn-default.navbar-btn.signIn-button Sign In
+        a(href='#/signup')       
+          button.btn.btn-default.navbar-btn.signUp-button Sign Up
+  div(ng-view)
