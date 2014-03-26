@@ -4,5 +4,5 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'HairHere: Find a Stylist Near You' });
+  res.render('index', { title: 'Noobtube: Earn money pwning noobs!' });
 };
