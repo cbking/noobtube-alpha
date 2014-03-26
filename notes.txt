@@ -1,0 +1,25 @@
+Notes
+
+Redis Database
+
+redis pearlfish.redistogo.com:10168> keys *
+1) "user:2"
+2) "user:3"
+3) "user:ids"
+4) "user:idchristianc750"
+5) "user:1"
+
+db.get('user:idchristianc750', function (err, id) {
+		console.log(id);
+});
+
+CONSOLE: 3
+
+We know that a get on the user:id+name exposes an id-like number
+
+
+//note that user id is not in the database
+db.get('user:idchristianc75', function (err, id) {
+		if (err) console.log("err");
+		if (!id) console.log("nothing found");
+});
