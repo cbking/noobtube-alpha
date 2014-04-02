@@ -9,6 +9,7 @@ var http = require('http');
 var path = require('path');
 var messages = require ('./lib/messages');
 var register = require('./routes/register')
+var login = require('./routes/login')
 
 var app = express();
 
@@ -37,7 +38,7 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 //app.get('/register', register.form);
 app.post('/register', register.submit);
-//app.post('/login', login.submit);
+app.post('/login', login.submit);
 //app.get('/logout', login.logut);
 
 http.createServer(app).listen(app.get('port'), function(){

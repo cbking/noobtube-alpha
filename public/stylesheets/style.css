@@ -1,8 +1,7 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+input {
+    border:1px solid black;
+    outline:none;
 }
-
-a {
-  color: #00B7FF;
+input.ng-invalid{
+    border-color: red;
 }

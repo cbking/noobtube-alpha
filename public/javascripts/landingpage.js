@@ -1,4 +1,4 @@
-var landingpage = angular.module("landingpage", ['ngRoute']);
+var landingpage = angular.module("landingpage", ['ngRoute',"match"]);
 
 function signUpController($scope) {
     $scope.pw1 = 'password';
